@@ -31,7 +31,7 @@ module.exports = {
   // add a custom index.html as the template
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
+      template: path.resolve(__dirname, "public", "index.html"),
     }),
   ],
   resolve: { extensions: [".js", ".jsx"] },

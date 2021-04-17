@@ -5,7 +5,7 @@ module.exports = {
   // the output bundle won't be optimized for production but suitable for development
   mode: "development",
   // the app entry point is /src/index.js
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: path.resolve(__dirname, "src", "index.jsx"),
   output: {
     // the output of the webpack build will be in /dist directory
     path: path.resolve(__dirname, "dist"),
@@ -34,4 +34,5 @@ module.exports = {
       template: path.resolve(__dirname, "src", "index.html"),
     }),
   ],
+  resolve: { extensions: [".js", ".jsx"] },
 };
